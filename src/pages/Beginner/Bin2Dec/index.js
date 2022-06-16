@@ -7,25 +7,38 @@ export default function Bin2Dec() {
   const [message, setMessage] = useState("");
   const [convertedValue, setConvertedValue] = useState("Valor convertido...");
 
-  function handleInputChange(e) {
+  function validateInput(stringValue) {
     const regX = /^[0-1]+$/g;
 
-    if (e.target.value.match(regX) === null) {
+    return stringValue.match(regX);
+  }
+
+  function handleInputChange(e) {
+    const value = e.target.value;
+
+    if (value === "") {
+      setMessage("");
+      return;
+    }
+
+    if (!validateInput(value)) {
       setMessage("Digite somente 0 e 1");
     } else {
-      setInputText(e.target.value);
+      setInputText(value);
       setMessage("");
     }
   }
 
-  function handleButtonConverter() {
-    if (inputText !== "" && inputText.match(/^[0-1]+$/g) !== null) {
+  function onFormSubmit(e) {
+    e.preventDefault();
+
+    if (inputText !== "" && validateInput(inputText)) {
       let newValue = 0;
       let cont = 0;
       let valueToConvert = inputText;
 
       for (let index = valueToConvert.length - 1; index >= 0; index--) {
-        newValue += valueToConvert.charAt(index) * Math.pow(2, cont);
+        newValue += Number(valueToConvert.charAt(index)) * Math.pow(2, cont);
 
         cont++;
       }
@@ -37,27 +50,25 @@ export default function Bin2Dec() {
   return (
     <Container>
       <h1>Conversor Binário para Decimal</h1>
-      <div className="displayContent">
-        <input
-          type="text"
-          maxLength="8"
-          name="inputToConvert"
-          placeholder="Digite os valores aqui..."
-          onChange={handleInputChange}
-        />
-        <span>{convertedValue}</span>
-      </div>
+      <form onSubmit={onFormSubmit}>
+        <div className="displayContent">
+          <input
+            type="text"
+            name="inputToConvert"
+            placeholder="Digite os valores aqui..."
+            onChange={handleInputChange}
+          />
+          <span>{convertedValue}</span>
+        </div>
 
-      <div className="actionsContent">
-        <span>{message}</span>
+        <div className="actionsContent">
+          <span>{message}</span>
 
-        <button
-          disabled={message.length !== 0 ? true : false}
-          onClick={handleButtonConverter}
-        >
-          Converter
-        </button>
-      </div>
+          <button disabled={message.length !== 0 ? true : false} type="submit">
+            Converter
+          </button>
+        </div>
+      </form>
     </Container>
   );
 }

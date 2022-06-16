@@ -14,7 +14,7 @@ Série de exercícios práticos apresentados no [App-Ideas](https://github.com/f
 
 ---
 
-### Bin2Dec
+### Bin2Dec - Exemplo
 
 ![Bin2Dec](./preview/bin2dec.jpg)
 
@@ -23,8 +23,8 @@ Série de exercícios práticos apresentados no [App-Ideas](https://github.com/f
 ## Tecnologias usadas
 
 - [ReactJS v17.0.2](https://reactjs.org)
-- [React Router Dom v5.3.0](https://styled-components.com/)
-- [Styled Componts](https://styled-components.com/)
+- [React Router Dom v5.3.0](https://v5.reactrouter.com/)
+- [Styled Componts v5.3.5](https://styled-components.com/)
 
 ---
 
