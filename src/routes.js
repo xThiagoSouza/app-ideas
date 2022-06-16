@@ -1,13 +1,14 @@
 import { Switch, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Bin2Dec from "./pages/Beginner/Bin2Dec";
+
+import BeginnerRoutes from "./beginner.routes";
 
 export default function Routes() {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route path="/Bin2Dec" component={Bin2Dec} />
+      <Route path="/Bin2Dec" component={BeginnerRoutes.Bin2Dec} />
     </Switch>
   );
 }

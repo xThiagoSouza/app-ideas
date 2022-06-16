@@ -16,13 +16,11 @@ export default function Navbar() {
           <ul className="sub-menu">
             {beginner.map((item) => (
               <li key={item.title}>
-                <Link to={item.path}>{item.title}</Link>
+                <Link to={item.url}>{item.title}</Link>
               </li>
             ))}
           </ul>
         </li>
-        {/* <li>Inter</li>
-        <li>Advanced</li> */}
       </ul>
     </NavbarMenu>
   );
