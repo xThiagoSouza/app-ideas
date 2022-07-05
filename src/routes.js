@@ -9,6 +9,10 @@ export default function Routes() {
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/Bin2Dec" component={BeginnerRoutes.Bin2Dec} />
+      <Route
+        path="/BorderRadiusPreviewer"
+        component={BeginnerRoutes.BorderRadiusPreviewer}
+      />
     </Switch>
   );
 }
