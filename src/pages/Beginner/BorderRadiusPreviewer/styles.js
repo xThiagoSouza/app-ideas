@@ -1,21 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  width: 500px;
-  margin: 25px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+import { Container } from "../../../components/Container/styles.js";
 
-  h1 {
-    color: var(--white);
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-    background: var(--primary-color);
-    padding: 5px;
-    border-radius: 5px;
-  }
+export const CustomContainer = styled(Container)`
+  width: 40%;
+  align-items: center;
 
   .up-props,
   .down-props {
@@ -30,8 +19,6 @@ export const Container = styled.div`
     width: 50px;
     padding: 5px;
     text-align: center;
-    border: 1px solid var(--primary-color);
-    color: var(--primary-color);
   }
 `;
 

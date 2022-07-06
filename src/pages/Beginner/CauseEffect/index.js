@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container } from "./styles";
+import { CustomContainer } from "./styles";
 
 export default function CauseEffect() {
   const persons = [
@@ -68,7 +68,7 @@ export default function CauseEffect() {
   const [person, setPerson] = useState({});
 
   return (
-    <Container>
+    <CustomContainer>
       <h1>CauseEffect</h1>
 
       <div>
@@ -105,6 +105,6 @@ export default function CauseEffect() {
           )}
         </div>
       </div>
-    </Container>
+    </CustomContainer>
   );
 }

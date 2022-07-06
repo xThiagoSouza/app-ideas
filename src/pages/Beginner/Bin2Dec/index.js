@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container } from "./styles";
+import { CustomContainer } from "./styles";
 
 export default function Bin2Dec() {
   const [inputText, setInputText] = useState("");
@@ -48,7 +48,7 @@ export default function Bin2Dec() {
   }
 
   return (
-    <Container>
+    <CustomContainer>
       <h1>Conversor Binário para Decimal</h1>
       <form onSubmit={onFormSubmit}>
         <div className="displayContent">
@@ -69,6 +69,6 @@ export default function Bin2Dec() {
           </button>
         </div>
       </form>
-    </Container>
+    </CustomContainer>
   );
 }

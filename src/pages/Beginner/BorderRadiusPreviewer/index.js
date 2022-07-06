@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container, Box } from "./styles";
+import { CustomContainer, Box } from "./styles";
 
 export default function BorderRadiusPreviewer() {
   const [upLeft, setUpLeft] = useState(0);
@@ -32,7 +32,7 @@ export default function BorderRadiusPreviewer() {
   }
 
   return (
-    <Container>
+    <CustomContainer>
       <h1>Border-Radius Previewer</h1>
 
       <div className="up-props">
@@ -58,6 +58,6 @@ export default function BorderRadiusPreviewer() {
         <input type="text" name="downLeft" onChange={handleChange} />
         <input type="text" name="downRight" onChange={handleChange} />
       </div>
-    </Container>
+    </CustomContainer>
   );
 }

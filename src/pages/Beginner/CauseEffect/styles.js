@@ -1,19 +1,8 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  width: 50%;
-  margin: 25px auto;
+import { Container } from "../../../components/Container/styles.js";
 
-  h1 {
-    color: var(--white);
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-    background: var(--primary-color);
-    padding: 5px;
-    border-radius: 5px;
-  }
-
+export const CustomContainer = styled(Container)`
   div {
     display: flex;
   }
