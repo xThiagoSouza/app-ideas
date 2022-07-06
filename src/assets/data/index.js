@@ -9,6 +9,11 @@ const beginner = [
     url: "BorderRadiusPreviewer",
     imgSrc: "./assets/images/border-radius-previewer.jpg",
   },
+  {
+    title: "Cause Effect",
+    url: "CauseEffect",
+    imgSrc: "./assets/images/cause-effect.jpg",
+  },
 ];
 
 const inter = [];
