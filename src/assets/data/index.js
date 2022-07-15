@@ -14,6 +14,11 @@ const beginner = [
     url: "CauseEffect",
     imgSrc: "./assets/images/cause-effect.jpg",
   },
+  {
+    title: "Christmas Lights",
+    url: "ChristmasLights",
+    imgSrc: "./assets/images/christmas-lights.jpg",
+  },
 ];
 
 const inter = [];

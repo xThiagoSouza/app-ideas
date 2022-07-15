@@ -14,6 +14,10 @@ export default function Routes() {
         component={BeginnerRoutes.BorderRadiusPreviewer}
       />
       <Route path="/CauseEffect" component={BeginnerRoutes.CauseEffect} />
+      <Route
+        path="/ChristmasLights"
+        component={BeginnerRoutes.ChristmasLights}
+      />
     </Switch>
   );
 }
