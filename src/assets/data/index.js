@@ -19,6 +19,11 @@ const beginner = [
     url: "ChristmasLights",
     imgSrc: "./assets/images/christmas-lights.jpg",
   },
+  {
+    title: "Calculator",
+    url: "Calculator",
+    imgSrc: "./assets/images/calculator.jpg",
+  },
 ];
 
 const inter = [];

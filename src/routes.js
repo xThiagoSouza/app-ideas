@@ -13,6 +13,7 @@ export default function Routes() {
         path="/BorderRadiusPreviewer"
         component={BeginnerRoutes.BorderRadiusPreviewer}
       />
+      <Route path="/Calculator" component={BeginnerRoutes.Calculator} />
       <Route path="/CauseEffect" component={BeginnerRoutes.CauseEffect} />
       <Route
         path="/ChristmasLights"
