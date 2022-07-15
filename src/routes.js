@@ -19,6 +19,7 @@ export default function Routes() {
         path="/ChristmasLights"
         component={BeginnerRoutes.ChristmasLights}
       />
+      <Route path="/ColorCycle" component={BeginnerRoutes.ColorCycle} />
     </Switch>
   );
 }

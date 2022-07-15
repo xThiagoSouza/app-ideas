@@ -24,6 +24,11 @@ const beginner = [
     url: "Calculator",
     imgSrc: "./assets/images/calculator.jpg",
   },
+  {
+    title: "Color Cycle",
+    url: "ColorCycle",
+    imgSrc: "./assets/images/color-cycle.jpg",
+  },
 ];
 
 const inter = [];
