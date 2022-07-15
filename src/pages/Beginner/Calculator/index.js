@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container } from "./styles";
+import { CustomContainer } from "./styles";
 
 export default function Calculator() {
   const [valueToShow, setValueToShow] = useState(0);
@@ -335,7 +335,7 @@ export default function Calculator() {
   }
 
   return (
-    <Container>
+    <CustomContainer>
       <h1>Calculator</h1>
 
       <div className="calc">
@@ -362,6 +362,6 @@ export default function Calculator() {
           <button>=</button>
         </form>
       </div>
-    </Container>
+    </CustomContainer>
   );
 }

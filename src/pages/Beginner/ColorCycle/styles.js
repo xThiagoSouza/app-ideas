@@ -1,23 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  width: 50%;
-  margin: 25px auto;
+import { Container } from "../../../components/Container/styles";
 
-  display: flex;
-  flex-direction: column;
+export const CustomContainer = styled(Container)`
   align-items: center;
   justify-content: center;
-
-  h1 {
-    color: var(--white);
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-    background: var(--primary-color);
-    padding: 5px;
-    border-radius: 5px;
-  }
 
   .box {
     width: 250px;

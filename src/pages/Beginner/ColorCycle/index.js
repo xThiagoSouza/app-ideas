@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container } from "./styles";
+import { CustomContainer } from "./styles";
 
 export default function ColorCycle() {
   const [message, setMessage] = useState("");
@@ -134,7 +134,7 @@ export default function ColorCycle() {
   };
 
   return (
-    <Container>
+    <CustomContainer>
       <h1>Color Cycle</h1>
 
       <div className="box" style={style}></div>
@@ -220,6 +220,6 @@ export default function ColorCycle() {
       </div>
 
       <p>{message && message}</p>
-    </Container>
+    </CustomContainer>
   );
 }

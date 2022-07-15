@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container } from "./styles";
+import { CustomContainer } from "./styles";
 
 export default function CountdownTimer() {
   const [message, setMessage] = useState("");
@@ -47,7 +47,7 @@ export default function CountdownTimer() {
   }
 
   return (
-    <Container>
+    <CustomContainer>
       <h1>Countdown Timer</h1>
 
       <form onChange={handleChange}>
@@ -62,7 +62,7 @@ export default function CountdownTimer() {
 
         {message.length !== 0 ? <div>{message}</div> : ""}
       </form>
-    </Container>
+    </CustomContainer>
   );
 }
 

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Container } from "./styles";
+import { CustomContainer } from "./styles";
 
 export default function ChristmasLights() {
   const [intensity, setIntensity] = useState(3);
@@ -8,7 +8,7 @@ export default function ChristmasLights() {
   const [idInterval, setIdInterval] = useState("");
 
   return (
-    <Container>
+    <CustomContainer>
       <h1>Christmas Lights</h1>
 
       <div className="lights">
@@ -115,6 +115,6 @@ export default function ChristmasLights() {
           {disabled ? "Stop" : "Start"}
         </button>
       </div>
-    </Container>
+    </CustomContainer>
   );
 }

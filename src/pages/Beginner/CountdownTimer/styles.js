@@ -1,20 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  width: 50%;
-  margin: 25px auto;
+import { Container } from "../../../components/Container/styles";
 
-  h1 {
-    color: var(--white);
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-    background: var(--primary-color);
-    padding: 5px;
-    border-radius: 5px;
-  }
-
+export const CustomContainer = styled(Container)`
   form {
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     width: 250px;
     display: flex;
@@ -30,10 +21,8 @@ export const Container = styled.div`
   }
 
   form input {
+    width: 100%;
     margin-bottom: 10px;
-    padding: 5px 7px;
-    border: none;
-    border-radius: 4px;
   }
 
   form button {

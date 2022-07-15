@@ -1,22 +1,10 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  width: 50%;
-  margin: 25px auto;
-  display: flex;
-  flex-direction: column;
+import { Container } from "../../../components/Container/styles";
+
+export const CustomContainer = styled(Container)`
   justify-content: center;
   align-items: center;
-
-  h1 {
-    color: var(--white);
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-    background: var(--primary-color);
-    padding: 5px;
-    border-radius: 5px;
-  }
 
   .lights {
     width: calc(7 * 50px + 9 * 10px);
