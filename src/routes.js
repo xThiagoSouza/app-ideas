@@ -20,6 +20,7 @@ export default function Routes() {
         component={BeginnerRoutes.ChristmasLights}
       />
       <Route path="/ColorCycle" component={BeginnerRoutes.ColorCycle} />
+      <Route path="/CountdownTimer" component={BeginnerRoutes.CountdownTimer} />
     </Switch>
   );
 }

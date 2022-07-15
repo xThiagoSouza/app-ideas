@@ -29,6 +29,11 @@ const beginner = [
     url: "ColorCycle",
     imgSrc: "./assets/images/color-cycle.jpg",
   },
+  {
+    title: "Countdown Timer",
+    url: "CountdownTimer",
+    imgSrc: "./assets/images/countdown-timer.jpg",
+  },
 ];
 
 const inter = [];
